@@ -43,3 +43,18 @@ In order for the CLI to be accessible from anywhere on your computer, it needs t
 
 2. Type `geode` and hit Enter. If CLI was installed correctly, you should see the CLI help displaying its version and commands.
 
+## Adding CLI to PATH
+
+> :warning: Note: this section is for MacOS.
+
+1. Open up Terminal
+
+2. Run - chmod +x /Users/Shared/Geode/bin/geode
+
+3. Then run - export PATH="/Users/Shared/Geode/bin:${PATH}"
+
+## Making sure it works
+
+1. Open up Terminal
+
+2. Type `geode` and hit Enter. If CLI was installed correctly, you should see the CLI help displaying its version and commands.
