@@ -34,6 +34,18 @@ These are instructions to create an empty mod.
 
 Alternatively, you can run CMake manually without using VSCode or using another program (such as Sublime Text), however using the VSCode environment is highly recommended for Geode projects.
 
+### Troubleshooting (MacOS only)
+
+If the CLI doesn't seem to work by just typing in "geode" into Terminal, then go through with these steps.
+
+1. Open up Terminal
+
+2. Run - chmod +x /Users/Shared/Geode/bin/geode
+
+3. Then run - export PATH="/Users/Shared/Geode/bin:${PATH}"
+
+4. Type in "geode" again and a help menu should show up!
+
 ### Building With VSCode
 
 To build with VSCode, simply press the `Build` button on the bottom bar or use the hotkey `F7`.
