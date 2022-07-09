@@ -49,9 +49,9 @@ In order for the CLI to be accessible from anywhere on your computer, it needs t
 
 1. Open up Terminal
 
-2. Run - chmod +x /Users/Shared/Geode/bin/geode
+2. Run `chmod +x /Users/Shared/Geode/bin/geode`
 
-3. Then run - export PATH="/Users/Shared/Geode/bin:${PATH}"
+3. Then run `export PATH="/Users/Shared/Geode/bin:${PATH}"`
 
 ## Making sure it works
 
