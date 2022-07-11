@@ -22,9 +22,11 @@ Here are a few resources you could use to get started:
 
 Here are some things you will need to know before starting:
 
- - A function is the thing you see next to "void" in the Bindings file. This is used to define what happens when the specified event occurs.
+- A function is the thing you see next to "void" in the Bindings file. This is used to define what happens when the specified event occurs.
 
 For example, "void destroyPlayer" means whatever happens when the player dies. If I were to put playDeathEffect(); inside that, it would play the death effect everytime the player crashes. (This may cause the player to never die as you have replaced the function but we will get to that later)
+
+- You don't always
 
 - An integer (int), double (double), float (float), and boolean (bool) are different values you can set within the game. An integer is a normal number, a double is a number that can store more digits and values, floats are (honestly IDK how to explain someone help here), and booleans are a basic true or false value.
 
@@ -38,4 +40,20 @@ For example, if I want to make it so that `hasCheated` becomes true when I die/c
 
 Now that we have learned everything, let's actually use this to make a mod.
 
- - To begin, modify the TBC
+ - To begin, modify the PlayLayer class
+
+`class $modify(PlayLayer) {}`
+ 
+ - Then, add when you want your code to happen by modifying a function
+
+`class $modify(PlayLayer) {
+  void destroyPlayer(PlayerObject*, GameObject*) {}
+}
+
+- Finally, you need to add what happens when the player crashes or is supposed to die
+
+`class $modify(PlayLayer) {
+  void destroyPlayer(PlayerObject*, GameObject*) {
+    playDeathEffect();
+  }
+}
